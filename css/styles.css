@@ -11,6 +11,7 @@
   --stroke-color: #ececec;
   --border-color: #eeeeee;
   --button-color: #f5f4fa;
+  --background-light: #e5e5e5;
 }
 /* SPYTAĆ SIĘ KONIECZNIE MENTORA JAK USUNĄĆ DOMYŚLNE FORMATOWANIE LINKÓW W PRZEGLĄDARCE */
 body {
@@ -19,8 +20,30 @@ body {
   text-decoration: none;
 }
 
+/*NAgłówki sekcji */
+
+.main-header {
+  color: var(--font-white);
+  padding-top: 200px;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-left: 28%;
+  width: 44%;
+  text-transform: uppercase;
+}
+
+.section-header {
+  text-align: center;
+  color: var(--font-black);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
 /* Klasy dla logo - ogólna + szczególna */
 .logo {
+  margin-left: 250px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -43,10 +66,40 @@ body {
   border: 1px solid var(--stroke-color);
 }
 
+/* klasa dla wszystkich sekcji */
+.section {
+  text-align: center;
+}
+
+.section-gray {
+  text-align: center;
+  background-color: var(--background-light);
+  margin-top: -15px;
+  padding-bottom: 100px;
+}
+
+.section-light-gray {
+  text-align: center;
+  background-color: var(--button-color);
+  margin-top: -30px;
+  padding-top: 30px;
+}
+
+.section-main {
+  height: 600px;
+  text-align: center;
+  background-color: var(--background-dark);
+}
+
+/* Klasa dla list */
+
 .list {
   display: inline-block;
   list-style: none;
+  margin: 15px;
 }
+
+/* Klasy dla menu */
 .menu-link {
   font-size: 16px;
   font-weight: 500;
@@ -66,6 +119,49 @@ body {
   color: var(--blue);
   text-decoration: none;
   margin: 24px;
+}
+
+/* Klasy dla article*/
+
+.article {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.article-header {
+  color: var(--font-black);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+
+.article-text {
+  color: var(--font-gray);
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* klasy dla teamu: */
+
+.team {
+  background-color: var(--font-white);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 4px 4px var(--shadow);
+}
+
+.team-member {
+  color: var(--font-black);
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.team-position {
+  color: var(--font-gray);
+  padding-bottom: 30px;
 }
 
 /* Klasa project dla divów w których są przykłady portfolio */
@@ -112,6 +208,22 @@ body {
   padding-bottom: 6px;
   margin: 4px;
 }
+.buttons-blue {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--blue);
+  color: var(--font-white);
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .buttons:hover,
 .buttons:focus {
   background-color: var(--blue);
@@ -146,6 +258,8 @@ body {
 }
 .address {
   font-style: normal;
+  list-style: none;
+  padding-left: 215px;
 }
 
 .mail-footer {
@@ -155,6 +269,9 @@ body {
 /* Klasa dla footer */
 
 .footer {
+  padding-top: 60px;
+  height: 192px;
+  margin-top: -30px;
   letter-spacing: 0.03em;
   color: var(--font-white);
   background-color: var(--background-dark);
