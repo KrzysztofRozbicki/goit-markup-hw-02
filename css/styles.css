@@ -18,6 +18,7 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--font-gray);
   text-decoration: none;
+  background-color: var(--background-light);
 }
 
 /*NAgłówki sekcji */
@@ -50,8 +51,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--blue);
   text-decoration: none;
+  margin-top: -5px;
 }
 
+.logo-top{
+  float: left;
+}
 .logo-header {
   color: var(--logo-black);
 }
@@ -62,8 +67,12 @@ body {
 
 /* Klasy dla ułożenia elementów menu górnego */
 
-.border {
+.section-menu {
+  text-align: center;
+  background-color: var(--font-white);
   border: 1px solid var(--stroke-color);
+  padding-bottom: 35px;
+  padding-top: 32px;
 }
 
 /* klasa dla wszystkich sekcji */
@@ -74,21 +83,28 @@ body {
 .section-gray {
   text-align: center;
   background-color: var(--background-light);
-  margin-top: -15px;
   padding-bottom: 100px;
+  padding-top: 94px;
 }
 
 .section-light-gray {
   text-align: center;
   background-color: var(--button-color);
-  margin-top: -30px;
   padding-top: 30px;
 }
 
 .section-main {
+  padding-top: 1px;
   height: 600px;
   text-align: center;
   background-color: var(--background-dark);
+}
+
+.section-projects {
+  padding-top: 34px;
+  text-align: center;
+  background-color: var(--font-white);
+  padding-bottom: 74px;
 }
 
 /* Klasa dla list */
@@ -100,6 +116,13 @@ body {
 }
 
 /* Klasy dla menu */
+
+.menu {
+  margin-left: 50px;
+  margin-top: -10px;
+  float: left;
+}
+
 .menu-link {
   font-size: 16px;
   font-weight: 500;
@@ -150,18 +173,23 @@ body {
   background-color: var(--font-white);
   font-size: 16px;
   letter-spacing: 0.03em;
-  box-shadow: 0px 4px 4px var(--shadow);
+  box-shadow: 0px 2px 2px var(--shadow);
+  border-radius: 4px;
+  margin-bottom: 94px;
 }
 
 .team-member {
   color: var(--font-black);
-  padding-top: 30px;
   font-weight: 500;
 }
 
 .team-position {
   color: var(--font-gray);
   padding-bottom: 30px;
+}
+
+.team-photo {
+  padding-bottom: 20px;
 }
 
 /* Klasa project dla divów w których są przykłady portfolio */
