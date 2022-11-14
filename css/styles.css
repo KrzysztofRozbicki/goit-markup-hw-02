@@ -54,7 +54,7 @@ body {
   margin-top: -5px;
 }
 
-.logo-top{
+.logo-top {
   float: left;
 }
 .logo-header {
@@ -113,6 +113,11 @@ body {
   display: inline-block;
   list-style: none;
   margin: 15px;
+}
+
+.list-buttons {
+  display: inline-block;
+  list-style: none;
 }
 
 /* Klasy dla menu */
@@ -196,7 +201,6 @@ body {
 
 .project {
   border: 1px solid var(--stroke-color);
-  margin: 15px;
 }
 
 .project-title {
