@@ -3,10 +3,6 @@
   <!-- Nagłówek z tagami meta oraz tytułem i opisem-->
   <head>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -20,17 +16,17 @@
   <body>
     <header class="section-menu">
       <!-- Logo -->
-      <a href="./" class="logo logo-top">Web<span class="logo-header">Studio</span> </a>
+      <a href="index.html" class="logo logo-top">Web<span class="logo-header">Studio</span> </a>
       <!-- Menu górne-->
       <nav>
         <ul class="menu">
-          <li class="list">
-            <a href="#" class="menu-active">Agencja</a>
+          <li class="list-item">
+            <a href="#" class="menu-link">Agencja</a>
           </li>
-          <li class="list">
+          <li class="list-item">
             <a href="portfolio.html" class="menu-link">Portfolio</a>
           </li>
-          <li class="list">
+          <li class="list-item">
             <a href="#" class="menu-link">Kontakt</a>
           </li>
         </ul>
@@ -40,16 +36,16 @@
       <a href="tel:+48111111111" class="address-header">+48 111 111 111</a>
     </header>
     <!-- MAIN -->
-    <main>
+    <main class="section">
       <!-- Sekcja - Efektywne rozwiązania z przyciskiem zamówienia usługi -->
       <section class="section-main">
         <h1 class="main-header">efektywne rozwiązania dla waszego biznesu</h1>
-        <button class="buttons-blue" type="button">Zamów usługę</button>
+        <button class="button-blue" type="button">Zamów usługę</button>
       </section>
       <!-- Sekcja "nasze atuty" (tak podpisane na figmie) zawierająca 4 krótkie artykuły(?) -->
-      <section class="section-gray">
+      <section class="section section-gray">
         <ul>
-          <li class="list">
+          <li class="list-item">
             <article class="article">
               <h3 class="article-header">lorem ipsum</h3>
               <p class="article-text">
@@ -58,7 +54,7 @@
               </p>
             </article>
           </li>
-          <li class="list">
+          <li class="list-item">
             <article class="article">
               <h3 class="article-header">lorem ipsum</h3>
               <p class="article-text">
@@ -67,7 +63,7 @@
               </p>
             </article>
           </li>
-          <li class="list">
+          <li class="list-item">
             <article class="article">
               <h3 class="article-header">lorem ipsum</h3>
               <p class="article-text">
@@ -76,7 +72,7 @@
               </p>
             </article>
           </li>
-          <li class="list">
+          <li class="list-item">
             <article class="article">
               <h3 class="article-header">lorem ipsum</h3>
               <p class="article-text">
@@ -86,10 +82,12 @@
             </article>
           </li>
         </ul>
+      </section>
+      <section class="section-gray section-middle">
         <!-- sekcja czym się zajmujemy (nagłówek i 3 zdjęcia) -->
         <h2 class="section-header">Czym się zajmujemy</h2>
         <ul>
-          <li class="list">
+          <li class="list-item">
             <img
               src="images/what_we_do/what_we_do_1.jpg"
               alt="Osoba pisząca kod przed komputerem"
@@ -97,7 +95,7 @@
               height="294"
             />
           </li>
-          <li class="list">
+          <li class="list-item">
             <img
               src="images/what_we_do/what_we_do_2.jpg"
               alt="Osoba tworząca na laptopie aplikacje mobilną"
@@ -105,7 +103,7 @@
               height="294"
             />
           </li>
-          <li class="list">
+          <li class="list-item">
             <img
               src="images/what_we_do/what_we_do_3.jpg"
               alt="Pracownik wybierający na tablecie kolor z palety kolorów"

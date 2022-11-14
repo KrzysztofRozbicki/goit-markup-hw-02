@@ -3,10 +3,6 @@
   <!-- Nagłówek z tagami meta oraz tytułem i opisem-->
   <head>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -21,17 +17,19 @@
   <body>
     <header class="section-menu">
       <!-- Logo -->
-      <a href="./" class="logo logo-top">Web<span class="logo-header">Studio</span> </a>
+      <!-- «B7» Atrybut href linków nawigacyjnych Studio i Portfolio zawiera względną ścieżkę do plików HTML tych stron. -->
+      <!-- Czy to oznacza że linkiem ma być sam fragment logo czyli tylko |Studio| ?-->
+      <a href="index.html" class="logo logo-top">Web<span class="logo-header">Studio</span> </a>
       <!-- Menu górne-->
       <nav>
         <ul class="menu">
-          <li class="list">
-            <a href="./" class="menu-link">Agencja</a>
+          <li class="list-item">
+            <a href="#" class="menu-link">Agencja</a>
           </li>
-          <li class="list">
-            <a href="#" class="menu-active">Portfolio</a>
+          <li class="list-item">
+            <a href="portfolio.html" class="menu-active">Portfolio</a>
           </li>
-          <li class="list">
+          <li class="list-item">
             <a href="#" class="menu-link">Kontakty</a>
           </li>
         </ul>
@@ -41,20 +39,18 @@
       <a href="tel:+48111111111" class="address-header">+48 111 111 111</a>
     </header>
     <main>
-      <!-- nav (?) Menu z filtrami - lista buttonów-->
-      <section class="section-projects">
-        <nav>
-          <ul>
-            <li class="list-buttons"><button type="button" class="buttons">Wszystkie</button></li>
-            <li class="list-buttons"><button type="button" class="buttons">Strony</button></li>
-            <li class="list-buttons"><button type="button" class="buttons">Aplikacje</button></li>
-            <li class="list-buttons"><button type="button" class="buttons">Dizajn</button></li>
-            <li class="list-buttons"><button type="button" class="buttons">Marketing</button></li>
-          </ul>
-        </nav>
+      <!-- Menu z filtrami - lista buttonów-->
+      <section class="section-project">
+        <ul>
+          <li class="list-button"><button type="button" class="button">Wszystkie</button></li>
+          <li class="list-button"><button type="button" class="button">Strony</button></li>
+          <li class="list-button"><button type="button" class="button">Aplikacje</button></li>
+          <li class="list-button"><button type="button" class="button">Dizajn</button></li>
+          <li class="list-button"><button type="button" class="button">Marketing</button></li>
+        </ul>
         <!-- Sekcja z obrazkami-->
         <ul>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/technocrack.jpg"
@@ -66,7 +62,7 @@
               <p class="project-description">Strona internetowa</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/new_orlean.jpg"
@@ -78,7 +74,7 @@
               <p class="project-description">Dizajn</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/seafood.jpg"
@@ -90,7 +86,7 @@
               <p class="project-description">Aplikacja</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/prime.jpg"
@@ -102,7 +98,7 @@
               <p class="project-description">Marketing</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/boxes.jpg"
@@ -114,7 +110,7 @@
               <p class="project-description">Aplikacja</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/inspiration.jpg"
@@ -126,7 +122,7 @@
               <p class="project-description">Strona internetowa</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/limited_edition.jpg"
@@ -138,7 +134,7 @@
               <p class="project-description">Dizajn</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/projekt_lab.jpg"
@@ -150,7 +146,7 @@
               <p class="project-description">Marketing</p>
             </div>
           </li>
-          <li class="list">
+          <li class="list-item">
             <div class="project">
               <img
                 src="images/portfolio/growing_business.jpg"
