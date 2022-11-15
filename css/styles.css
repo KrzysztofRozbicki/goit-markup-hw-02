@@ -68,7 +68,7 @@ body {
 
 /* Klasy dla ułożenia elementów menu górnego */
 
-.section-menu {
+.top-bar {
   text-align: center;
   background-color: var(--font-white);
   border: 1px solid var(--stroke-color);
@@ -77,26 +77,26 @@ body {
 }
 
 /* klasa dla wszystkich sekcji */
-.section {
+.center-text {
   text-align: center;
 }
 
-.section-gray {
+.section-article {
   background-color: var(--background-light);
   padding-top: 94px;
 }
 
-.section-middle {
+.section-what-we-do {
   padding-top: 80px;
   padding-bottom: 94px;
 }
 
-.section-light-gray {
+.section-team {
   background-color: var(--button-color);
   padding-top: 30px;
 }
 
-.section-main {
+.section-call-to-action {
   padding-top: 1px;
   height: 600px;
   text-align: center;
@@ -150,7 +150,7 @@ body {
   color: var(--blue);
 }
 
-.menu-active {
+.menu-link-active {
   font-size: 14px;
   font-weight: 500;
   color: var(--blue);
@@ -160,7 +160,7 @@ body {
 
 /* Klasy dla article*/
 
-.article {
+.article-container {
   margin-left: auto;
   margin-right: auto;
   width: 270px;
@@ -183,7 +183,7 @@ body {
 
 /* klasy dla teamu: */
 
-.team {
+.team-container {
   background-color: var(--font-white);
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -208,7 +208,7 @@ body {
 
 /* Klasa project dla divów w których są przykłady portfolio */
 
-.project {
+.project-container {
   border: 1px solid var(--stroke-color);
 }
 
@@ -233,7 +233,7 @@ body {
 /* Klasa buttons dla przycisków z filtrami */
 /* Z jakiegoś powodu gdy w klasach .buttons nie ma zadeklarowanej font-family: 'Roboto' - czcionka się zmienia */
 
-.button {
+.project-list-button {
   display: inline-block;
   background-color: var(--button-color);
   color: var(--font-black);
@@ -250,7 +250,7 @@ body {
   padding-bottom: 6px;
   margin: 4px;
 }
-.button-blue {
+.button-call-to-action {
   background-color: var(--blue);
   color: var(--font-white);
   font-size: 16px;
@@ -265,8 +265,8 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.button:hover,
-.button:focus {
+.project-list-button:hover,
+.project-list-button:focus {
   background-color: var(--blue);
   color: var(--font-white);
   box-shadow: 0px 4px 4px var(--shadow);
@@ -274,7 +274,7 @@ body {
 
 /* Klasy dla addresu w header i footer */
 
-.address-header {
+.contact-text-header {
   font-size: 14px;
   font-weight: 500;
   color: var(--font-gray);
@@ -282,34 +282,34 @@ body {
   margin: 25px;
 }
 
-.address-header:hover,
-.address-header:focus {
+.contact-text-header:hover,
+.contact-text-header:focus {
   color: var(--blue);
 }
 
-.address-footer {
+.contact-text-footer {
   color: var(--font-address);
   text-decoration: none;
   font-style: normal;
 }
 
-.address-footer:hover,
-.address-footer:focus {
+.contact-text-footer:hover,
+.contact-text-footer:focus {
   color: var(--blue);
 }
-.address {
+.contact-text {
   font-style: normal;
   list-style: none;
   padding-left: 175px;
 }
 
-.mail-footer {
+.contact-text-mail-bottom {
   text-decoration: underline;
 }
 
 /* Klasa dla footer */
 
-.footer {
+.bottom-bar {
   padding-top: 60px;
   height: 192px;
   margin-top: -30px;
